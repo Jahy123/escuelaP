@@ -220,6 +220,7 @@ body {
   animation: animacionTitulo 8s infinite;
   max-width: 100%;
   word-wrap: break-word;
+  font-weight: bold;
 }
 .boton {
   width: 100%;
@@ -267,12 +268,21 @@ audio {
 .parrafo {
   display: flex;
   width: 100%;
-  height: auto;
+  height: 100vh;
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
   text-align: center;
+}
+.video video {
+  height: 100vh;
+  width: 100%;
+}
+.imagen,
+.imagen img {
+  height: auto;
+  width: 100%;
 }
 .parrafo p {
   max-width: 100%;
@@ -280,6 +290,9 @@ audio {
 }
 .parrafo {
   padding: 10%;
+}
+footer p {
+  font-size: 0.5em;
 }
 #pInicial {
   margin-top: 50vh;
@@ -328,5 +341,82 @@ audio {
   }
   to {
     transform: translateY(15%) rotate(90deg);
+  }
+}
+
+/* Dispositivos móviles */
+@media only screen and (min-width: 0px) and (max-width: 320px) {
+  .h1 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .h1 {
+    font-size: 1.1rem;
+  }
+  p {
+    font-size: 1.05rem;
+  }
+}
+
+/* iPads, tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .h1 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1.05rem;
+  }
+}
+
+/* Pantallas pequeñas, ordenadores portátiles */
+@media only screen and (min-width: 769px) and (max-width: 960px) {
+  .h1 {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 1.08rem;
+  }
+}
+
+/* Pantallas grandes, ordenadores de escritorio */
+@media only screen and (min-width: 961px) and (max-width: 1024px) {
+  .h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  .video video {
+    height: 100vh;
+    width: auto;
+  }
+  .imagen,
+  .imagen img {
+    height: 100%;
+    width: 100%;
+  }
+}
+/* Pantallas extra-grandes, televisores */
+@media only screen and (min-width: 1025px) and (max-width: 1328px) {
+  .h1 {
+    font-size: 2rem;
+    line-height: 1.6em;
+  }
+  p {
+    font-size: 1.5rem;
+    line-height: 1.6em;
+  }
+  .video video {
+    height: 100vh;
+    width: auto;
+  }
+  .imagen,
+  .imagen img {
+    height: 100%;
+    width: 100%;
   }
 }
