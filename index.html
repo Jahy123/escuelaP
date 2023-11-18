@@ -18,8 +18,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Dancing+Script&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -29,24 +31,43 @@
   <body>
     <header class="header">
       <section class="audio">
-        <audio autoplay loop controls>
-          <source src="./css/audio/curiouslyStrong.mp3" type="audio/mp3" />
+        <audio id="audio1" autoplay loop controls>
+          <source
+            id="cancion"
+            src="./css/audio/writingtheEnding.mp3"
+            type="audio/mp3"
+          />
           Tu navegador no soporta el elemento de audio.
         </audio>
       </section>
       <div class="titulo">
         <h1 class="h1">Escuela del precursor 2023</h1>
-      </div>
-      <div class="subtitulo">
-        <h2 class="h2">Regresa el sábado 18 Nov 2023</h2>
+        <div class="boton ocultar" id="boton">
+          <a class="botonGaleria" href="#felicitaciones"
+            ><img
+              class="imagenBoton"
+              src="https://res.cloudinary.com/drqhvncqw/image/upload/v1699981294/boton-de-play_oisrvw.svg"
+              alt="Boton galería"
+          /></a>
+        </div>
+
+        <div id="contador"></div>
       </div>
     </header>
+    <section class="ocultar" id="contenedorMultimedia">
+      <div class="parrafo" id="felicitaciones">
+        <p id="pInicial">
+          ¡Felicidades! Tu dedicación, habilidad y compromiso han dado como
+          resultado haber cumplido con una meta más. Cada esfuerzo invertido no
+          han pasado desapercibidos. Ha inspirado a quienes te rodean.
+        </p>
+      </div>
+    </section>
     <footer>
       <p>
-        Track: "curiously strong", seazin Music provided by https://slip.stream
-        Free Download / Stream:
-        https://slip.stream/tracks/d1c996d0-9844-4246-811a-9f621975f05d?utm_source=attribution
-        Listen on Spotify: https://go-stream.link/sp-seazin
+        Track: "Writing the Ending", Call It Kismet Music provided by
+        https://slip.stream Free Download / Stream:
+        https://get.slip.stream/rixamC
       </p>
     </footer>
   </body>
