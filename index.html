@@ -32,13 +32,17 @@
     <header class="header">
       <section class="audio">
         <audio id="audio1" autoplay loop controls>
-          <source src="./css/audio/writingtheEnding.mp3" type="audio/mp3" />
+          <source
+            id="cancion"
+            src="./css/audio/writingtheEnding.mp3"
+            type="audio/mp3"
+          />
           Tu navegador no soporta el elemento de audio.
         </audio>
       </section>
       <div class="titulo">
         <h1 class="h1">Escuela del precursor 2023</h1>
-        <div class="boton">
+        <div class="boton ocultar" id="boton">
           <a class="botonGaleria" href="#felicitaciones"
             ><img
               class="imagenBoton"
@@ -46,9 +50,11 @@
               alt="Boton galería"
           /></a>
         </div>
+
+        <div id="contador"></div>
       </div>
     </header>
-    <section id="contenedorMultimedia">
+    <section class="ocultar" id="contenedorMultimedia">
       <div class="parrafo" id="felicitaciones">
         <p id="pInicial">
           ¡Felicidades! Tu dedicación, habilidad y compromiso han dado como

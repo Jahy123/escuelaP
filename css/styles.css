@@ -251,7 +251,7 @@ audio {
   margin: 0.5%;
   animation: animacionAudio 8s;
 }
-#contenedorMultimedia {
+.galeria {
   padding: 5%;
 
   width: 100%;
@@ -298,6 +298,23 @@ footer p {
   margin-top: 50vh;
   margin-bottom: 50vh;
 }
+#contador {
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  height: auto;
+  width: auto;
+  animation: animacionTitulo 8s infinite;
+  max-width: 100%;
+  word-wrap: break-word;
+  font-weight: bold;
+  font-size: inherit;
+  text-align: center;
+  margin-top: 1%;
+}
+.ocultar {
+  display: none;
+}
 @keyframes animacionTitulo {
   0% {
     width: 0;
@@ -335,12 +352,21 @@ footer p {
     opacity: 100%;
   }
 }
+
 @keyframes animacionBoton {
   from {
     transform: translateY(-0.2%) rotate(90deg);
   }
   to {
     transform: translateY(15%) rotate(90deg);
+  }
+}
+@keyframes animacionContador {
+  from {
+    transform: scale(0.98);
+  }
+  to {
+    transform: scale(1);
   }
 }
 
